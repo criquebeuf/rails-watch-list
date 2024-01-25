@@ -1,0 +1,14 @@
+<h1><%= @list.name %> </h1>
+
+<h3>Bookmarks</h3>
+  <ul>
+    <% @bookmarks.each do |bookmark| %>
+      <li><%= bookmark.movie.title %> | Comment: <%= bookmark.comment %></li>
+      <%# #links by default trigger get requests so we need to write the data bit %>
+    <% end %>
+  </ul>
+
+<h3>Add new bookmark?</h3>
+<%= link_to "Add a bookmark!", new_list_bookmark_path(@list) %>
+
+</div>
