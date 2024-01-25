@@ -1,12 +1,18 @@
-<h1>Lists</h1>
+<div class="background">Save any kind of movies</div>
 
-<div>
+<h1>My lists</h1>
+
+
+<div class="cards">
+
   <% @lists.each do |list| %>
-    <%= list.name %>
-    <p>
-      <%= link_to "Show this list", list %>
-    </p>
+
+    <div class="card wrapper">
+        <h2><%= list.name %></h2>
+        <button class="my-button"><%= link_to "Show this list", list %></button>
+    </div>
   <% end %>
+
 </div>
 
-<%= link_to "New list", new_list_path %>
+<button class="my-button"><%= link_to "New list", new_list_path %></button>

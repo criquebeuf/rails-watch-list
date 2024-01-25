@@ -11,6 +11,13 @@
   </head>
 
   <body>
+  <nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand">Watch list</a>
+  <form class="form-inline">
+    <button class="my-button"><%= link_to "My lists", lists_path %></button>
+    <button class="my-button"><%= link_to "New lists", new_list_path %></button>
+  </form>
+</nav>
     <%= yield %>
   </body>
 </html>

@@ -1,0 +1,13 @@
+.background {
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  height: 300px;
+  font-size: 250%;
+  color: $main;
+  text-align: center;
+  background-image: url("https://images.adsttc.com/media/images/5f7d/fef2/63c0/170a/9100/0273/newsletter/Jiangnan_Photography.jpg?1602092773");
+}

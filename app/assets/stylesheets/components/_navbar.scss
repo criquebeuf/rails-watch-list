@@ -1,12 +1,18 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
-}
+.my-button {
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: $fifth;
+  border-radius: 20px;
+  a {
+    text-decoration:none;
+    color: white;
+  }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+  :hover {
+    color: white;
+  }
 }
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-brand {
+  padding: 10px;
 }

@@ -5,6 +5,7 @@
     <% @bookmarks.each do |bookmark| %>
       <li><%= bookmark.movie.title %> | Comment: <%= bookmark.comment %></li>
       <%# #links by default trigger get requests so we need to write the data bit %>
+      <%= link_to "Delete this bookmark", bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
     <% end %>
   </ul>
 
